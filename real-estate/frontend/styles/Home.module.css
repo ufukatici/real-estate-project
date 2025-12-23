@@ -1,0 +1,191 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.filters select,
+.filters input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.propertyCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.propertyCard:hover {
+  transform: translateY(-5px);
+}
+
+.propertyImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.propertyInfo {
+  padding: 20px;
+}
+
+.propertyInfo h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.address {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5576c;
+  margin-bottom: 15px;
+}
+
+.details {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.status {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #999;
+}
+
+.description {
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.agentInfo {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.agentInfo h4 {
+  margin-bottom: 10px;
+}
+
+.inquiryBtn {
+  width: 100%;
+  padding: 15px;
+  background: #f5576c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modalContent input,
+.modalContent textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modalButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.modalButtons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalButtons button[type="submit"] {
+  background: #f5576c;
+  color: white;
+}
+
+.modalButtons button[type="button"] {
+  background: #ccc;
+  color: #333;
+}
+
